@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import EmployeeService from '../services/EmployeeService';
 
 class ListEmployeeComponent extends Component {
@@ -7,6 +8,7 @@ class ListEmployeeComponent extends Component {
         this.state={
             employees: []
         }
+        
         this.addEmployee=this.addEmployee.bind(this);
         this.editEmployee=this.editEmployee.bind(this);
         this.deleteEmployee=this.deleteEmployee.bind(this);
@@ -73,4 +75,4 @@ class ListEmployeeComponent extends Component {
     }
 }
 
-export default ListEmployeeComponent;
+export default withRouter(ListEmployeeComponent);
