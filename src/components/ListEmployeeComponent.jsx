@@ -14,14 +14,14 @@ class ListEmployeeComponent extends Component {
         this.deleteEmployee=this.deleteEmployee.bind(this);
     }
     viewEmployee(id){
-        this.props.history.push(`/view-employee/${id}`);
+        this.props.history.push(`/React-Frontend-CRUD/view-employee/${id}`);
     }
     deleteEmployee(id){
         EmployeeService.deleteEmployee(id).then((res)=>{
             window.location.reload()});
     }
     editEmployee(id){
-        this.props.history.push(`/update-employee/${id}`);
+        this.props.history.push(`/React-Frontend-CRUD/update-employee/${id}`);
     }
     componentDidMount(){
         EmployeeService.getEmployees().then((res) => { 
@@ -29,7 +29,7 @@ class ListEmployeeComponent extends Component {
         });
     }
     addEmployee(){
-        this.props.history.push('/add-employee');
+        this.props.history.push('/React-Frontend-CRUD/add-employee');
     }
 
     render() {

@@ -17,10 +17,10 @@ function App() {
                 <Switch>
                   <Route path="/" exact component={ListEmployeeComponent}/>
                   <Route path="/React-Frontend-CRUD" exact component={ListEmployeeComponent}/>
-                  <Route path="/employees" component={ListEmployeeComponent}/>
-                  <Route path="/add-employee" component={CreateEmployeeComponent}/>
-                  <Route path="/update-employee/:id" component={UpdateEmployeeComponent}/>
-                  <Route path="/view-employee/:id" component={ViewEmployeeComponent}/>
+                  <Route path="/React-Frontend-CRUD/employees" component={ListEmployeeComponent}/>
+                  <Route path="/React-Frontend-CRUD/add-employee" component={CreateEmployeeComponent}/>
+                  <Route path="/React-Frontend-CRUD/update-employee/:id" component={UpdateEmployeeComponent}/>
+                  <Route path="/React-Frontend-CRUD/view-employee/:id" component={ViewEmployeeComponent}/>
                   
                 </Switch>
               </div>
