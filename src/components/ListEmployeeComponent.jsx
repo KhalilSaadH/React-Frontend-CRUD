@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+//import { withRouter } from 'react-router-dom';
 import EmployeeService from '../services/EmployeeService';
 
 class ListEmployeeComponent extends Component {
@@ -75,4 +75,4 @@ class ListEmployeeComponent extends Component {
     }
 }
 
-export default withRouter(ListEmployeeComponent);
+export default ListEmployeeComponent;

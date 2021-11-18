@@ -16,11 +16,12 @@ function App() {
               <div className="container">
                 <Switch>
                   <Route path="/" exact component={ListEmployeeComponent}/>
+                  <Route path="/React-Frontend-CRUD" exact component={ListEmployeeComponent}/>
                   <Route path="/employees" component={ListEmployeeComponent}/>
                   <Route path="/add-employee" component={CreateEmployeeComponent}/>
                   <Route path="/update-employee/:id" component={UpdateEmployeeComponent}/>
                   <Route path="/view-employee/:id" component={ViewEmployeeComponent}/>
-                  <ListEmployeeComponent/>
+                  
                 </Switch>
               </div>
             <FooterComponent/>
