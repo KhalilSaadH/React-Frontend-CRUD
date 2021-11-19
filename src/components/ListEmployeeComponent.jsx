@@ -40,7 +40,7 @@ class ListEmployeeComponent extends Component {
                     <button className="btn btn-primary" onClick={this.addEmployee}>Add Employee</button>
 
                 </div>
-                <div className="row">
+                <div className="table-responsive w-100">
                     <table className="table table-striped table-bordered">
                         <thead>
                             <tr>
@@ -59,9 +59,9 @@ class ListEmployeeComponent extends Component {
                                         <td>{employee.lastName}</td>
                                         <td>{employee.email}</td>
                                         <td>
-                                            <button onClick={()=> this.editEmployee(employee.id)} className="btn btn-success">Update</button>
-                                            <button style={{marginLeft:"10px"}} onClick={()=> this.deleteEmployee(employee.id)} className="btn btn-danger">Delete</button>
-                                            <button style={{marginLeft:"10px"}} onClick={()=> this.viewEmployee(employee.id)} className="btn btn-info">View</button>
+                                            <button type="button" style={{margin: '0 5px'}} onClick={()=> this.editEmployee(employee.id)} className="btn btn-success">Update</button>
+                                            <button type="button" style={{margin: '0 5px'}} onClick={()=> this.deleteEmployee(employee.id)} className="btn btn-danger">Delete</button>
+                                            <button type="button" style={{margin: '0 5px'}} onClick={()=> this.viewEmployee(employee.id)} className="btn btn-info">View</button>
 
                                         </td>
                                     </tr>
