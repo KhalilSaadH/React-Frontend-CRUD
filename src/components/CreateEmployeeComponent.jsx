@@ -22,7 +22,7 @@ class CreateEmployeeComponent extends Component {
         console.log('employee =>'+ JSON.stringify(employee));
 
         EmployeeService.createEmployee(employee).then((res)=>{
-            this.props.history.push('/employees');
+            this.props.history.push('//React-Frontend-CRUD/employees');
         });
     }
     changeFirstNameHandler=(event)=>{
@@ -35,7 +35,7 @@ class CreateEmployeeComponent extends Component {
         this.setState({email: event.target.value});
     }
     cancel(){
-        this.props.history.push('/employees');
+        this.props.history.push('/React-Frontend-CRUD/employees');
     }
     
     render() {
